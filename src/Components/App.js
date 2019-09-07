@@ -35,27 +35,27 @@ class App extends React.Component {
     return (
       <div className="page">
         <div className="container">
-          <div className="row p-auto">
-            <div className="col-lg-6 col-sm-12" id="generator">
+          <div className="row ">
+            <div className="col-lg-8 col-md-12" id="generator">
               <h1>Clash Royal Deck Generator</h1>
               <GenerateButton onClick={this.onGenerateButtonClicked} />
             </div>
-            <div className="col-lg-3"></div>
+            <div className="col-lg-1"></div>
             <div className="col-lg-3 col-md-12 pt-3" id="elixcalc">
               <h2>
                 <Elixir cards={this.state.cards} />
               </h2>
             </div>
           </div>
-          <div className="row justify-content-center pt-4">
-            <div className="col-8 ">
+          <div className="row">
+            <div className="col-lg-8 col-md-12" id="deck">
               <CardsDeck
                 onCardSelect={this.onCardSelect}
                 cards={this.state.cards}
               />
             </div>
-            <div className="col-lg-1"></div>
-            <div className="col-3">
+            <div className="col-lg-1 "></div>
+            <div className="col-lg-3 col-md-12" id="detail">
               <CardDetail card={this.state.selectedCard} />
             </div>
           </div>

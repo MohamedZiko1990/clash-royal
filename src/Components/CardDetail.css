@@ -1,0 +1,19 @@
+div h5 {
+  text-align: center;
+  background-color: #f50cf1;
+  color: black;
+  padding-bottom: 2pt;
+  padding-left: 2pt;
+}
+
+div h4 {
+  text-align: center;
+  background-color: #ffcc00;
+  color: black;
+  padding-bottom: 2pt;
+  padding-left: 2pt;
+}
+
+div p {
+  text-align: justify;
+}

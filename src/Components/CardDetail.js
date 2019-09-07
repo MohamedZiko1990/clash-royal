@@ -1,19 +1,28 @@
-import React from 'react';
+import React from "react";
+import "./CardDetail.css";
 
-const CardDetail = ({card}) =>{
-   if(!card){
-       return <div></div>;
-   }
+const CardDetail = ({ card }) => {
+  if (!card) {
+    return <div></div>;
+  }
 
-    return (
+  return (
+    <div>
+      <img
+        src={`http://www.clashapi.xyz/images/cards/${card.idName}.png`}
+        alt="..."
+        height="300px"
+      />
       <div>
-          <img src={`http://www.clashapi.xyz/images/cards/${card.idName}.png`} />
-          <h2>{card.name}</h2>
-          <h3> Cardtype : {card.type} </h3>
-          <h4> CardRarity : {card.rarity} </h4>
-          <h5> CardElixir : {card.elixirCost} </h5>
+        <h4>{card.name}</h4>
+        <h5>
+          {" "}
+          {card.type} | {card.rarity} | {card.elixirCost}
+        </h5>
+        <p class="card-text"> {card.description}</p>
       </div>
-    );
-}
+    </div>
+  );
+};
 
 export default CardDetail;

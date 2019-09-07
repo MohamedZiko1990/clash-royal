@@ -1,12 +1,19 @@
 .page {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
-#generator{
-    text-align: center;
+#generator {
+  text-align: center;
 }
 
-#elixcalc{
-    text-align: center;
+#elixcalc {
+  text-align: center;
 }
 
+#deck {
+  text-align: center;
+}
+
+#detail {
+  text-align: center;
+}
