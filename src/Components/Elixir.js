@@ -6,7 +6,8 @@ const Elixir = ({ cards }) => {
     sum += cards[i].elixirCost;
   }
 
-  const percentage = (sum / 10) * 10;
+  var percentage = (sum / 8 / 10) * 100;
+
   return (
     <div>
       <h3>Average Elixir Cost:</h3>
