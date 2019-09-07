@@ -7,7 +7,7 @@ import Elixir from "./Elixir";
 import CardDetail from "./CardDetail";
 
 class App extends React.Component {
-  state = { cards: [], selectedCard: null };
+  state = { cards: [], selectedCard: null, loading: false };
 
   componentDidMount() {
     this.onGenerateButtonClicked();
