@@ -52,6 +52,7 @@ class App extends React.Component {
               <CardsDeck
                 onCardSelect={this.onCardSelect}
                 cards={this.state.cards}
+                selectedCard={this.state.selectedCard}
               />
             </div>
             <div className="col-lg-1 "></div>
