@@ -7,7 +7,7 @@ import Elixir from "./Elixir";
 import CardDetail from "./CardDetail";
 
 class App extends React.Component {
-  state = { cards: [], selectedCard: null, loading: false };
+  state = { cards: [], selectedCard: null };
 
   componentDidMount() {
     this.onGenerateButtonClicked();
@@ -17,7 +17,7 @@ class App extends React.Component {
     var selectedCards = [];
     ClashRoyal.get("/api/cards").then(response => {
       for (var i = 1; i < 9; i++) {
-        var random = Math.floor(Math.random() * response.data.length); // *84 the length , not to get undfined values in mapping
+        var random = Math.floor(Math.random() * response.data.length);
         selectedCards.push(response.data[random]);
       }
       this.setState({
