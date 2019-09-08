@@ -12,13 +12,14 @@ const Card = ({ card, onCardSelect, selectedCard }) => {
       className="col-xl-3 col-lg-4 col-md-6 col-sm-12"
     >
       <div className={selected}>
-        <img
-          className="selection"
-          src={`http://www.clashapi.xyz/images/cards/${card.idName}.png`}
-          width="150"
-          height="200"
-        />
-
+        <a href="#top">
+          <img
+            className="selection"
+            src={`http://www.clashapi.xyz/images/cards/${card.idName}.png`}
+            width="150"
+            height="200"
+          />
+        </a>
         <h3>
           {" "}
           <i class="fas fa-tint"></i>

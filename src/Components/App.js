@@ -41,7 +41,7 @@ class App extends React.Component {
               <GenerateButton onClick={this.onGenerateButtonClicked} />
             </div>
             <div className="col-lg-1"></div>
-            <div className="col-lg-3 col-md-12 pt-3" id="elixcalc">
+            <div className="col-lg-3 col-md-12 pt-1 pb-1" id="elixcalc">
               <h2>
                 <Elixir cards={this.state.cards} />
               </h2>
@@ -49,6 +49,7 @@ class App extends React.Component {
           </div>
           <div className="row">
             <div className="col-lg-8 col-md-12" id="deck">
+              {" "}
               <CardsDeck
                 onCardSelect={this.onCardSelect}
                 cards={this.state.cards}
@@ -56,7 +57,10 @@ class App extends React.Component {
               />
             </div>
             <div className="col-lg-1 "></div>
-            <div className="col-lg-3 col-md-12" id="detail">
+            <div
+              className="col-lg-3 col-md-12 order-first order-lg-3"
+              id="detail"
+            >
               <CardDetail card={this.state.selectedCard} />
             </div>
           </div>
