@@ -1,68 +1,68 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Clash Royale Challenge
 
-In the project directory, you can run:
+The goal of this task was to create a random deck of 8 cards each time we press the `generate` button.it was also aimed to show card details upon player selection.The app automatically counts the average elixir cost per deck.
 
-### `npm start`
+### Overview
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A small web app created using ReactJs, which generates random deck with its cards (8 cards) as a default based on the available cards provided through Clash API. Each time the `generate button` is clicked, the app will generate new random deck with different random cards. And the deck average elixir cost will be calculated automatically and shown in the progress bar.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Each card has single character, building, or spell and shows its elixir vlaue just below it. Each card has some characteristics like (name, elixir cost, type and rarity.. etc).
 
-### `npm test`
+Whenever a card is clicked, it will show all in formation about the card in the a detailed card (image, name, rarity, description, elixir cost and type). The detailed card is set by default to the first card in each new generated deck. the clicked card will be shaded once selected.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The created app is totally responsive and compatible with all devices using bootstrap grid. Google font was also used for the main fonts in the app.
 
-### `npm run build`
+#### Steps
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- open the page to show random deck consists of 8 cards with `generate` button to choose another random deck.
+- Each deck shows the average cost of elixir.
+- Each card is represented as an image with elixir cost for each one.
+- Clicking on any card must show information about the card (image, name, rarity, description, elixir cost and type)in the detailed card created.
+- Click on any card will shaded it and fly to the detailed card place (if Needed) according to the used window size.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+#### Frame Works/ libraries/ tools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ReactJs
+- Bootstrap 4
+- Git
+- Postman
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Game Introduction
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Entities
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### Deck
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Deck is collection of selected 8 cards from all available cards, and it will be used in battles.
 
-## Learn More
+##### Cards
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Cards are the key part of the game and it could be troop, building or spell.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+##### Elixir bar
 
-### Code Splitting
+Elixir is the average power of the random deck cards.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+##### Generate Button
 
-### Analyzing the Bundle Size
+Generate Random Decks of 8 Cards each time Pressed. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+##### Detailed Card
 
-### Making a Progressive Web App
+Show the image and all info about clicked card by the user. Bydefault it shows the first card in the deck generated.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+---
 
-### Advanced Configuration
+#### Clash API
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- Base url `http://www.clashapi.xyz`
+- Cards endpoint `/api/cards`
+- Card details `/api/cards/{:id}` or `/api/cards/{:idName}`
+- Image urls `/images/cards/${idName}.png`
 
-### Deployment
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
