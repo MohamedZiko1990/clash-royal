@@ -25,6 +25,7 @@ The created app is totally responsive and compatible with all devices using boot
 #### Frame Works/ libraries/ tools
 
 - ReactJs
+- axios
 - Bootstrap 4
 - Git
 - Postman
