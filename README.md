@@ -35,17 +35,25 @@ The created app is totally responsive and compatible with all devices using boot
 
 #### Entities
 
+##### Deck
+
+Deck is collection of selected 8 cards from all available cards, and it will be used in battles.
+
 ##### Cards
 
 Cards are the key part of the game and it could be troop, building or spell.
 
-##### Elixir
+##### Elixir bar
 
-Elixir is spent to place cards on the battlefield. Elixir is produced gradually throughout the battle at a specific rate. Each card costs predefined amount of elixir.
+Elixir is the average power of the random deck cards.
 
-##### Deck
+##### Generate Button
 
-Deck is collection of selected 8 cards from all available cards, and it will be used in battles.
+Generate Random Decks of 8 Cards each time Pressed. 
+
+##### Detailed Card
+
+Show the image and all info about clicked card by the user. Bydefault it shows the first card in the deck generated.
 
 ---
 
