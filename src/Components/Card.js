@@ -16,11 +16,12 @@ const Card = ({ card, onCardSelect, selectedCard }) => {
           <img
             className="selection"
             src={`http://www.clashapi.xyz/images/cards/${card.idName}.png`}
+            title={card.name}
             width="150"
             height="200"
           />
         </a>
-        <h3>
+        <h3 id="power">
           {" "}
           <i class="fas fa-tint"></i>
           {card.elixirCost}{" "}

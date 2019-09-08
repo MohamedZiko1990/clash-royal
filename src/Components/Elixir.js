@@ -1,4 +1,5 @@
 import React from "react";
+import "./Elixir.css";
 
 const Elixir = ({ cards }) => {
   var sum = 0;
@@ -9,7 +10,7 @@ const Elixir = ({ cards }) => {
   var percentage = (sum / 8 / 10) * 100;
 
   return (
-    <div>
+    <div id="average-power">
       <h3>Average Elixir Cost:</h3>
       <h2>
         <i class="fas fa-tint"> </i> {sum / 8}{" "}
