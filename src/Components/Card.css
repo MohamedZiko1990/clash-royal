@@ -4,3 +4,8 @@
 .selection {
   cursor: pointer;
 }
+
+#power {
+  font-family: "Bangers", cursive;
+  font-weight: 300;
+}
